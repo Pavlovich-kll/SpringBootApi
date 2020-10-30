@@ -4,7 +4,7 @@
     <!--кнопка выхода. видна после авторизации-->
     <form action="/logout" method="post">
         <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
-        <input type="supmit" value="Sing out"/>
+        <input type="submit" value="Sing out"/>
     </form>
 </div>
 <div>
@@ -31,6 +31,7 @@
         <b>{{id}}</b>
         <span>{{text}}</span>
         <i>{{tag}}</i>
+        <strong>{{authorName}}</strong>
     </div>
 {{/messages}}
 </body>
