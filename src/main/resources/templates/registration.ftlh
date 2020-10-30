@@ -5,6 +5,6 @@
 <@c.page>
 Add new user
 <!--добавляем проверку-->
-${message}
+${message?ifExists}
 <@l.login "/registration" />
 </@c.page>
