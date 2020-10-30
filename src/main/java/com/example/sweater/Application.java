@@ -1,4 +1,4 @@
-package com.example.sweate;
+package com.example.sweater;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
