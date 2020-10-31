@@ -40,6 +40,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .loginPage("/login") //указываем страницу
                     .permitAll() //разрешаем пользоваться всем
                 .and()
+                    .rememberMe()//даже если сессия протухла, то спринг все равно ищет по идентификаторам настройки для авторизации
+                .and()
                     .logout() //вкл форму выхода
                     .permitAll();
     }
